@@ -16,4 +16,8 @@ Oxide was designed to work with the standard Python tools
 	 $ virtualenv MyProject
 	 $ source MyProject/bin/activate
 	 $ # Install Odoo
-	 $ pip install https://github.com/odoo/odoo/archive/10.0.zip
+     $ git clone https://github.com/odoo/odoo.git --depth=1
+     $ pip install -e ./odoo
+     $ # Install Oxide
+     $ pip install -e https://github.com/OxideApps/oxide.git@10.0#egg=oxide
+     $ odoo start -i base_oxide
